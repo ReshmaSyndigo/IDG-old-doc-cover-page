@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<meta name="StartPage" content="bu" />
+<meta name="Version" content="1.0" />
+<meta name="Persona" content="BusinessUsers" />
+<title>Contact</title>
+
+
+
+<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->
+<!--<link rel="stylesheet" href="css/modern-business.css">
+<link rel="stylesheet" href="css/lavish-bootstrap.css">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/theme-blue.css">
+<link rel="stylesheet" href="css/rating-stars.css">
+<link rel="stylesheet" href="css/prettyPhoto.css">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/jquery-ui.css">
+<link rel="stylesheet" href="css/layout-default.css">-->
+<link href="css/print_style.css" rel="stylesheet" type="text/css" media="print" />
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css">
+<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="css/meanmenu.css">
+<link rel="stylesheet" href="css/selectric.css">
+<link rel="stylesheet" href="css/easy-responsive-tabs.css">
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+<link rel="stylesheet" href="css/accordion-style.css">
+<link rel="stylesheet" href="css/nav_style.css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="css/responsive.css" type="text/css">
+<link rel="stylesheet" href="css/prettyPhoto.css">
+<link rel="stylesheet" href="css/styles2.css" type="text/css">
+
+
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script type="text/javascript">
+	var checkif = 'yes';
+</script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/picturefill.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/customscripts.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.layout.js"></script>
+<script src="js/wiselinks-1.2.2.min.js"></script>
+<script src="js/toc.js"></script>-->
+
+
+<script src="js/owl.carousel.js"></script>
+<script src="js/tether.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.meanmenu.js"></script>
+<script src="js/jquery.selectric.js"></script>
+<script src="js/easyResponsiveTabs.js"></script>
+<script src="js/jquery-scrolltofixed.js"></script>
+<script type="text/javascript" src="js/cascadingDivs.min.js"></script>
+<script type="text/javascript" src="js/jquery.matchHeight.js"></script>
+
+<script type="text/javascript" src="js/jquery-equal-height.js"></script>
+
+<script type="text/javascript" src="js/jspdf.min.js"></script>
+
+<script type="text/javascript" src="js/html2canvas.min.js"></script>
+
+<script src="js/accordion-main.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/jquery.history.js"></script>
+<script src="js/picturefill.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/jquery-scrolltofixed.js"></script>
+<script src="js/customscripts.js"></script>
+<script src="js/main.js"></script>
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="" href="http://127.0.0.13:4005/feed.xml">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42246885-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-42246885-2');
+</script>
+	<script>
+        $(document).ready(function(){
+			$('.play-bt').click(function(event){
+				event.preventDefault()
+				var getid = $(this).attr('data-url');
+				//alert(getid);
+				$('#video_modal iframe').attr("src", getid+"?autoplay=1");
+				$('#video_modal').modal('show');
+			})
+			$('#video_modal').on('hidden.bs.modal',function() {
+				$('#video_modal iframe').attr("src", "");
+			});
+			//same-height
+			$('.same-height').jQueryEqualHeight('.full-box .loop-box .blue-button');
+			$('.same-height').jQueryEqualHeight('.full-box .loop-box .title');
+			$('.same-height').jQueryEqualHeight('.full-box .loop-box .body-text');
+			$('.same-height').jQueryEqualHeight('.full-box');
+			///video-row
+			$("#sp-scroll").mCustomScrollbar({
+				setHeight:560,
+				theme:"dark"
+			});
+		
+			var imgH = $('#db_one').height();
+			$('#top-banner').css({'min-height':'218px'});
+			$('#developerTab').easyResponsiveTabs({
+				type: 'default', //Types: default, vertical, accordion
+				width: 'auto', //auto or any width like 600px
+				fit: true, // 100% fit in a container
+				tabidentify: 'hor_1', // The tab groups identifier
+				activate: function(event) { // Callback function if tab is switched
+					var $tab = $(this);
+					var $info = $('#nested-tabInfo');
+					var $name = $('span', $info);
+					var gname = $(this).attr('data-pic');
+					//alert(gname);
+					$('#top-banner .image-banner:not(#'+gname+')').fadeOut('fast');
+					$('#top-banner .image-banner#'+gname).fadeIn('fast');
+					//$name.text($tab.text());
+					//$info.show();
+				}
+			});
+			//
+			function makeSameHeight(getele){
+				var spDivH = 0;
+				$(getele).each(function( index ) {
+					console.log( index + ": " + $( this ).text() );
+					var th = $( this ).height();
+					if(th > spDivH){
+						spDivH = th;
+					}
+				});
+				
+				return spDivH;
+			}
+			var getHH = makeSameHeight('#developers-users ul li');
+			$('#developers-users ul li .link-box').css({'min-height':getHH});
+			///////
+			$('#cookie-notice .button.bootstrap').click(function(event){
+				event.preventDefault()
+				$('#cookie-notice').fadeOut('fast');
+			})
+			///////
+			//side-nav
+			var getSNH = $('.page-wapper').height();
+			//alert(getSNH);
+			if($(window).width() > 768){
+				$('.side-nav').css({'min-height':getSNH-20});
+			}
+			//
+			$('select').selectric();
+			//
+			$('#paragraphs').cascadingDivs();
+			var sph = 0;
+			$('.nav-content-holder > div').each(function( index ) {
+				console.log( index + ": " + $( this ).text() );
+				var th = $( this ).outerHeight();
+				if(th > sph){
+					sph = th;
+				}
+			});
+			$('.nav-content-holder > div').css({'position':'absolute'});
+			$('.nav-content-holder').css({'min-height':sph});
+			$('#paragraphs > div').click(function() {
+				var getid = $(this).attr('data-id');
+				//alert(getid);
+				$('.nav-content-holder > div').fadeOut('fast', function() {
+					$('.nav-content-holder > div#'+getid).fadeIn('fast');
+					//alert(getid);
+					var getHH_two = makeSameHeight('#'+getid+' ul li');
+					//alert(getHH_two);
+					//$('.nav-content-holder > div#'+getid).find('.link-box').css({'min-height':getHH_two});
+				});
+			})
+			//////
+        })
+		
+    </script>
+
+</head>
+<body class="white-bg">
+<!-- Navigation -->
+<div id="hand-over"></div>
+<div id="google_translate_element" align="right"></div>
+<script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en'
+        }, 'google_translate_element');
+    }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<header class="no-print">
+    <div class="container">
+        <div class="row justify-content-md-end">
+            <div class="col-xs-12 col-sm-2 col-md-2">
+                <div class="hamburger" style="display: none;">
+                    <a href="#" id="c-button--push-left">
+                        <img src="images/hamburger.svg" width="32" height="32">
+                    </a>
+                </div>
+                <div class="logo-holder"><a href="/rdp"><img src="images/logo.png" width="203"
+                            height="38"></a></div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="search-holder">
+                    <button type="submit">search</button>
+                    <input type="text" id="query" placeholder="Search documentation..." />
+                </div>
+
+
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-4">
+
+                <div class="headermobile_nav360">
+                    <div class="header_top_nav_left">
+                        <ul></ul>
+                    </div>
+                    <div class="header_top_nav_right">
+                        <ul></ul>
+                    </div>
+                    <div class="header_top_nav_options">
+                        <div class="header-dropdown-selection version">
+                            <div class="btn-select_homepage btn-select"><span class="v-name" title=" PIM &amp; MDM"> PIM
+                                    &amp;
+                                    MDM</span></div>
+                            <div class="header-dropdown">
+                                <ul>
+                                    <li><a class="active" href="/v2#" title="PIM &amp; MDM"> <span class="v-name">PIM
+                                                &amp;
+                                                MDM</span> </a></li>
+                                    <li><a href="/developers#" title="Syndication"> <span
+                                                class="v-name">Syndication</span> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="user-dropdown"><a class="user-dropdown-toggle" href="#" title="User Profile"> <img
+                                    src="/images/avatar.png"> </a>
+                            <div class="user-dropdown-content" style="display: none;">
+                                <div class="user-image"><img src="/images/avatar.png"></div>
+                                <div class="user-detail">
+                                    <div class="user-email">reshma.rk@syndigo.com</div>
+                                    <div class="user-dropdown-link-logout">
+                                        <div></div>
+                                        <div>
+                                            <div class="user-logout"><a href="/Account/Logout">Logout</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The following is old docportal section -->
+                <!--
+                    <div class="others-holders">
+            	<div class="language-holder">
+                	<select id="select-language">
+                        <option>EN</option>
+                        <option>BN</option>
+                        <option>CN</option>
+                    </select>
+                </div>
+                <div class="after-login-holder logout" style="display:none">
+                    
+              </div>
+              
+              
+                  <div class="contact-holder">
+                      
+                          <a href="/rdp/rn/rn_whats_new.html">What's New</a>
+                       
+                  </div>
+                  
+                  <div class="contact-holder">                          	
+                      
+                          <a href="contact.html" class="contact" style="display:none;">Contact</a> 
+                          <a href="/rdp/Login.aspx" class="logout" style="display:none;">Logout</a>
+                      
+                  </div>
+                   
+              </div> -->
+            </div>
+        </div>
+    </div>
+</header>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        if (window.location == window.parent.location) {
+            $('.contact').show();
+            $('.logout').show();
+        }
+        var myArr = [];
+        $('body').keypress(function (e) {
+            if (e.keyCode == '13') {
+                var query = $('#query').val();
+                if (query.length == 0) {
+                    return;
+                }
+                window.location.href = "Searchresults.html?q=" + query;
+            }
+        });
+
+        $.ajax({
+            type: "GET",
+            url: "js/Titles.xml", // change to full path of file on server
+            dataType: "xml",
+            success: parseXml,
+            complete: setupAC,
+            failure: function (data) {
+                alert("XML File could not be found");
+            }
+        });
+
+        function parseXml(xml) {
+            //find every query value
+            $(xml).find("Title").each(function () {
+                if ($.inArray($(this).text(), myArr) == -1)
+                    tocTitle = $(this).text().replace(/&quot;/g, "\"").replace(/&amp;quot;/g, "\"").replace(/&apos;/g, "'");
+                myArr.push(tocTitle);
+            });
+        }
+
+        function setupAC() {
+            $("#query").autocomplete({
+                source: myArr,
+                minLength: 1,
+                appendTo: $(".search-holder"),
+                select: function (event, ui) {
+                    $("#query").val(ui.item.value);
+                    var query = ui.item.value;
+                    if (query.length == 0) {
+                        return;
+                    }
+                    window.location.href = "Searchresults.html?q=" + query;
+                }
+            });
+        }
+    });
+<<<<<<< HEAD
+</script>
+=======
+</script>
+>>>>>>> f57b74ac4cffad9b0c95acdd13cb7d4ba9c0df8b
+
+
+<div class="page-wapper give-height o-wrapper no-paading-top" id="o-wrapper">
+	
+    <section class="contactus-container">
+    <form action="https://docs.riversand.com:8080/contact" method="post">
+    <div class="container">
+        <div class="contactus-block">
+            <div class="contact-header">
+                <h2>How can we help you?</h2>
+            </div>
+            <div class="form-half">
+                
+                <div class="form-group">
+                    <label>First Name <span>*</</label>
+                    <input type="txt" class="form-control" name="first_name" >
+                </div>
+                <div class="form-group">
+                    <label>Last Name <span>*</</label>
+                    <input type="txt" class="form-control" name="last_name">
+                </div>
+                <div class="form-group">
+                    <label>Reason for Contacting Us <span>*</</label>
+                    <textarea class="form-control" rows="3" name="reason"></textarea>
+                </div>
+                <button type="submit" class="cont-primary">Submit</button>
+                
+            </div>
+            <div class="form-half">
+                <div class="form-group">
+                    <label>Email Address <span>*</</label>
+                    <input type="txt" class="form-control" name="email">
+                </div>
+                <div class="form-group">
+                    <label>Company <span>*</</label>
+                    <input type="txt" class="form-control" name="company" >
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    </form>
+</section>
+    
+</div>
+
+<div class="footer-sp site-footer nomargine hidden-print" id="new-footer">
+   <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-3">
+                <div class="footer-widgets">
+                <h2>Solutions</h2>
+                <div class="menu-footer">
+                   <ul>
+                      <li><a href="https://www.riversand.com/solutions/riversand-mdm/" target="_blank">Multi-Domain Master Data Management</a></li>
+                      <li><a href="http://www.riversand.com/solutions/riversand-pim/" target="_blank">Product Information Management (PIM)</a></li>
+                      <li><a href="http://www.riversand.com/solutions/riversand-dam/" target="_blank">Digital Asset Management</a></li>
+                      <li><a href="http://www.riversand.com/solutions/riversand-print/" target="_blank">Print Solution</a></li>
+                      <li><a href="http://www.riversand.com/solutions/riversand-connect/" target="_blank">Data Integration and Syndication</a></li>
+                      <li><a href="http://www.riversand.com/solutions/riversand-customermdm/" target="_blank">Customer Information Management</a></li>
+                      <li><a href="http://www.riversand.com/solutions/riversand-vendordata/" target="_blank">Vendor Portal</a></li>                      
+                   </ul>
+                </div>
+            </div>
+            </div>
+            <div class="col-xs-12 col-sm-2 col-md-2">
+                <div class="footer-widgets">
+                <h2>Industries</h2>
+                <div class="menu-footer">
+                   <ul>
+                      <li><a href="http://www.riversand.com/industries/retail/retail-industry-overview/" target="_blank">Retail</a></li>
+                      <li><a href="http://www.riversand.com/industries/manufacturing/" target="_blank">Manufacturing</a></li>
+                      <li><a href="http://www.riversand.com/industries/distribution/" target="_blank">Distribution</a></li>
+                      <li><a href="http://www.riversand.com/industries/energy/" target="_blank">Energy</a></li>
+                      <li><a href="http://www.riversand.com/industries/healthcare/" target="_blank">Healthcare</a></li>
+                      <li><a href="http://www.riversand.com/industries/food-services/" target="_blank">Food Services</a></li>                      
+                   </ul>
+                </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-2 col-md-2">
+                <div class="footer-widgets">
+                <h2>Company</h2>
+                <div class="menu-footer">
+                   <ul>
+                      <li><a href="http://www.riversand.com/company/" target="_blank">History</a></li>
+                      <li><a href="http://www.riversand.com/company/#team" target="_blank">Leadership Team</a></li>
+                      <li><a href="http://www.riversand.com/clients/" target="_blank">Clients</a></li>
+                      <li><a href="http://www.riversand.com/partners/" target="_blank">Partners</a></li>
+                      <li><a href="http://riversandcolors.com/" target="_blank">Riversand Colors</a></li>
+                      <li><a href="http://www.riversand.com/company/#newssection" target="_blank">News &#038; Events</a></li>
+                      <li><a href="http://www.riversand.com/news-events/#webinars" target="_blank">Webinars</a></li>                      
+                   </ul>
+                </div>
+            </div>
+            </div>
+            <div class="col-xs-12 col-sm-2 col-md-2">
+                <div class="footer-widgets">
+                <h2>Support</h2>
+                <div class="menu-footer">
+                   <ul>
+                    <li><a href="http://www.riversand.com/careers/" target="_blank">Careers</a></li>
+                    <li><a href="http://www.riversand.com/contact/" target="_blank">Contact Us</a></li>
+                    <li><a href="http://www.riversand.com/sitemap/" target="_blank">Sitemap</a></li>
+                    <li><a href="http://www.riversand.com/privacy-policy/" target="_blank">Privacy Policy</a></li>
+                   </ul>
+                </div>
+                </div>
+                
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3">
+                
+                <div class="footer-widgets">
+                   <div class="row logo"><a href="index.html" class="logo-footer"></a></div>
+                   <div class="row">
+                      <p class="email"><a href="mailto:sales@riversand.com">sales@riversand.com</a></p>
+                   </div>
+                   <div class="row">
+                      <p class="phone"><a href="tel:17139348899">+1 713.934.8899</a></p>
+                   </div>
+                   <div class="row social">
+                      <a href="https://www.facebook.com/Riversandmdm/" target="_blank" rel="noopener noreferrer"><img src="images/icon-facebook.svg" height="30" width="30"></a>
+                      <a href="https://twitter.com/riversandmdm" target="_blank" rel="noopener noreferrer"><img src="images/icon-twitter.svg" height="30" width="30"></a>
+                      <a href="https://www.youtube.com/user/riversandpim" target="_blank" rel="noopener noreferrer"><img src="images/icon-youtube.svg" height="30" width="30"></a>
+                      <a href="https://in.linkedin.com/company/riversand" target="_blank" rel="noopener noreferrer"><img src="images/icon-linkedin.svg" height="30" width="30"></a>
+                   </div>
+                   <div class="row">
+                      <p class="copyright">&copy; 2022 Riversand All Rights Reserved.</p>
+                   </div>
+                </div>
+                
+            </div>
+        </div>
+
+      
+   </div>
+</div>
+
+<nav id="c-menu--slide-left" class="c-menu c-menu--slide-left">
+  <button class="c-menu__close">&larr; Close Menu</button>
+
+    <div class="right-panel">
+        <div class="link-block">
+
+            
+
+        </div>
+        <div class="links-massage">
+            <a href="#"><img src="images/left-massage-icon.jpg" width="47" height="47"></a>
+        </div>
+        
+    </div>
+</nav>
+<div id="c-mask" class="c-mask"></div>
+<script language="javascript">
+	$(document).ready(function(){
+			//////
+            $('#results-container').html('');
+			var pushLeft = new Menu({
+				wrapper: '#o-wrapper',
+				type: 'slide-left',
+				menuOpenerClass: '.c-button',
+				maskId: '#c-mask'
+			});
+		
+			var slideLeftBtn = document.querySelector('#c-button--push-left');
+			
+			slideLeftBtn.addEventListener('click', function(e) {
+				e.preventDefault;
+				pushLeft.open();
+			})
+      //
+      // $('#results-ul-container').mCustomScrollbar({});
+      // $('#results-ul-container').css({'display':'none'});
+      //////
+      $( ".post-content table" ).each(function() {
+            var gg = $( this ).html();
+            //alert(gg);
+        });
+			//////
+	})
+	$(window).load(function() {
+
+        
+			var getdocH = $(document).height();
+			var getwinH = $(window).height();
+			var getwinW = $(window).width();
+			//alert(getdocH+', '+getwinH);
+			var getHeaderH = $('header').outerHeight();
+			var getLinkH = $('.link-block').outerHeight();
+			var getPaddingH = (getdocH-getLinkH);
+			var maxh = getwinH-getHeaderH;
+			getPaddingH = (getPaddingH-getHeaderH)/2;
+      //checkif = 'no';
+      setTimeout(function(){ 
+        checkif = 'no';
+        $('#results-ul-container').mCustomScrollbar({});
+       }, 3000);
+			//if(getwinW > 768){
+				//$('.right-panel').css({'padding-top':getHeaderH+20, 'min-height':getdocH});
+				//$('.links-massage').css({'padding-top':getPaddingH});
+				$('.links-massage').css({'padding-top':'30px'});
+				$('.right-panel .link-block').css({'max-height':maxh-150});
+				$('.right-panel .link-block').mCustomScrollbar();
+        //$('#results-ul-container').mCustomScrollbar({});
+        //$('#results-ul-container').css({'display':'none'})
+        // $('#results-ul-container').css({'display':'none', 'opacity':1})
+			//}
+					///
+		});
+        ////
+    document.addEventListener('contextmenu', event => event.preventDefault()
+    );
+</script>
+
+</body>
+</html>
