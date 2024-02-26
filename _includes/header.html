@@ -1,14 +1,16 @@
 <!-- Navigation -->
 <div id="hand-over"></div>
-<div id="google_translate_element" align="right"></div><script>
+<div id="google_translate_element" align="right"></div>
+<script>
     function googleTranslateElementInit() {
-    new google.translate.TranslateElement({
-    pageLanguage: 'en'
-    }, 'google_translate_element');
+        new google.translate.TranslateElement({
+            pageLanguage: 'en'
+        }, 'google_translate_element');
     }
-    </script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>    
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <header class="no-print">
-	<div class="container">
+    <div class="container">
         <div class="row justify-content-md-end">
             <div class="col-xs-12 col-sm-2 col-md-2">
                 <div class="hamburger" style="display: none;">
@@ -16,19 +18,64 @@
                         <img src="images/hamburger.svg" width="32" height="32">
                     </a>
                 </div>
-                <div class="logo-holder"><a href="{{ site.main_url }}"><img src="images/logo.png" width="203" height="38"></a></div>
+                <div class="logo-holder"><a href="{{ site.main_url }}"><img src="images/logo.png" width="203"
+                            height="38"></a></div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6">
-            	<div class="search-holder">    
-                    <button type="submit">search</button>               
-                    <input type="text" id="query" placeholder="Search documentation..."/>                  
+                <div class="search-holder">
+                    <button type="submit">search</button>
+                    <input type="text" id="query" placeholder="Search documentation..." />
                 </div>
-                
-                
+
+
             </div>
-            
+
             <div class="col-xs-12 col-sm-4 col-md-4">
-            	<div class="others-holders">
+
+                <div class="headermobile_nav360">
+                    <div class="header_top_nav_left">
+                        <ul></ul>
+                    </div>
+                    <div class="header_top_nav_right">
+                        <ul></ul>
+                    </div>
+                    <div class="header_top_nav_options">
+                        <div class="header-dropdown-selection version">
+                            <div class="btn-select_homepage btn-select"><span class="v-name" title=" PIM &amp; MDM"> PIM
+                                    &amp;
+                                    MDM</span></div>
+                            <div class="header-dropdown">
+                                <ul>
+                                    <li><a class="active" href="/v2#" title="PIM &amp; MDM"> <span class="v-name">PIM
+                                                &amp;
+                                                MDM</span> </a></li>
+                                    <li><a href="/developers#" title="Syndication"> <span
+                                                class="v-name">Syndication</span> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="user-dropdown"><a class="user-dropdown-toggle" href="#" title="User Profile"> <img
+                                    src="/images/avatar.png"> </a>
+                            <div class="user-dropdown-content" style="display: none;">
+                                <div class="user-image"><img src="/images/avatar.png"></div>
+                                <div class="user-detail">
+                                    <div class="user-email">reshma.rk@syndigo.com</div>
+                                    <div class="user-dropdown-link-logout">
+                                        <div></div>
+                                        <div>
+                                            <div class="user-logout"><a href="/Account/Logout">Logout</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The following is old docportal section -->
+                <!--
+                    <div class="others-holders">
             	<div class="language-holder">
                 	<select id="select-language">
                         <option>EN</option>
@@ -43,32 +90,32 @@
                     <div class="dropdown-menu" role="menu">
                     	<div class="content">
                   			<ul>
-                            	<li><a href="{{ site.logout_url }}" class="more">Logout</a></li>
-                                <!--<li><a href="{{ site.home_url }}" class="more">Home</a></li>-->
+                            	<li><a href="{{ site.logout_url }}" class="more">Logout</a></li>-->
+                <!--<li><a href="{{ site.home_url }}" class="more">Home</a></li>
                                 
                             </ul>
-                  		</div>
+                        </div>
+                </div>
+                {% endif %}
+              </div>
+              
+              {% if site.build != "ascend" %}
+                  <div class="contact-holder">
+                      {% if site.is_logout_ubuntu==true %}
+                          <a href="/rn/rn_whats_new.html">What's New</a>
+                      {% else %}
+                          <a href="/rdp/rn/rn_whats_new.html">What's New</a>
+                      {% endif %} 
                   </div>
-                  {% endif %}
-                </div>
-                
-                {% if site.build != "ascend" %}
-                    <div class="contact-holder">
-                        {% if site.is_logout_ubuntu==true %}
-                            <a href="/rn/rn_whats_new.html">What's New</a>
-                        {% else %}
-                            <a href="/rdp/rn/rn_whats_new.html">What's New</a>
-                        {% endif %} 
-                    </div>
-                    
-                    <div class="contact-holder">                          	
-                        {% if site.is_logout_external==true %}
-                            <a href="contact.html" class="contact" style="display:none;">Contact</a> 
-                            <a href="/rdp/Login.aspx" class="logout" style="display:none;">Logout</a>
-                        {% endif %}
-                    </div>
-                {% endif %}     
-                </div>
+                  
+                  <div class="contact-holder">                          	
+                      {% if site.is_logout_external==true %}
+                          <a href="contact.html" class="contact" style="display:none;">Contact</a> 
+                          <a href="/rdp/Login.aspx" class="logout" style="display:none;">Logout</a>
+                      {% endif %}
+                  </div>
+              {% endif %}     
+              </div> -->
             </div>
         </div>
     </div>
@@ -77,7 +124,7 @@
 
     $(document).ready(function () {
 
-        if(window.location == window.parent.location){
+        if (window.location == window.parent.location) {
             $('.contact').show();
             $('.logout').show();
         }
@@ -116,7 +163,7 @@
             $("#query").autocomplete({
                 source: myArr,
                 minLength: 1,
-                appendTo:$(".search-holder"),
+                appendTo: $(".search-holder"),
                 select: function (event, ui) {
                     $("#query").val(ui.item.value);
                     var query = ui.item.value;
@@ -129,8 +176,3 @@
         }
     });
 </script>
-<!-- <style media="screen">
-    div#openFeedbackContainer {
-        display: none;
-    }
-</style> -->
